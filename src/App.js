@@ -8,9 +8,9 @@ import Quiz from './components/Quiz.jsx';
 
 const App = () => {
   return <div>
+      <Header tag="Welcome to KD Shopify Quiz" />
     <Quiz />
     <ContactPage />
-    <Header tag="MyTodo" />
     <Counter />
     <Item text="eat" />
     <Item text="work" />
