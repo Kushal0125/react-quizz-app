@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import Header from './components/Header';
+import Item from './components/Todoitems';
+import Counter from './components/counter-components';
+import ContactPage from './components/contact.jsx';
+import Quiz from './components/Quiz.jsx';
+
+const App = () => {
+  return <div>
+    <Quiz />
+    <ContactPage />
+    <Header tag="MyTodo" />
+    <Counter />
+    <Item text="eat" />
+    <Item text="work" />
+    <Item text="sleep" />
+  </div>
 }
 
 export default App;
